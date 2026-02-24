@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnComprarPremium.addEventListener("click", function(e) {
       e.preventDefault();
       // Pega o link que você colocou no botão lá no editor visual
-      const urlAlvo = this.getAttribute("href") || "https://pay.kiwify.com/Sn3OD6N"; 
+      const urlAlvo = this.getAttribute("href") || "https://pay.kiwify.com/SDbmiAy"; 
       redirectWithUtm(urlAlvo);
     });
   }
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnUpgradeYes.addEventListener("click", (e) => {
       e.preventDefault();
       // Link do botão SIM (Pega do HTML ou usa o fixo se vazio)
-      const urlSim = btnUpgradeYes.getAttribute("href") || "https://pay.kiwify.com/Sn3OD6N";
+      const urlSim = btnUpgradeYes.getAttribute("href") || "https://pay.kiwify.com/SDbmiAy";
       redirectWithUtm(urlSim);
     });
   }
