@@ -1,0 +1,21 @@
+{
+  "name": "mega-universo-stl",
+  "version": "2.0.0",
+  "description": "Site de vendas do Mega Universo STL - A maior coleção de modelos 3D",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Site deployed'",
+    "build": "echo 'Build successful - Static site ready'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "3d",
+    "stl",
+    "impressao-3d",
+    "modelos-3d"
+  ],
+  "author": "Mega Universo STL Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module"
+}

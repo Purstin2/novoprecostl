@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ultra Pack STL 2026  Projeto</title>
+    <!-- Google Fonts - Poppiuyns -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
+    <!-- Otimização de velocidade VTurb -->
+    <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+    <link rel="preload" href="https://scripts.converteai.net/a2bc65e2-b315-4aea-b664-3bbdc0b1a084/players/699a9c7dfd027ea26a30915c/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/a2bc65e2-b315-4aea-b664-3bbdc0b1a084/players/699a9c59055018086ea72129/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/a2bc65e2-b315-4aea-b664-3bbdc0b1a084/699a9c786aee4c1df83577b5/main.m3u8" as="fetch">
+    <link rel="preload" href="https://cdn.converteai.net/a2bc65e2-b315-4aea-b664-3bbdc0b1a084/699a9c517d7b375b25ef73ff/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <!-- CSS principal do projeto -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Script para capturar UTMs IMEDIATAMENTE -->
+    <script>
+      // Captura UTMs da URL e salva no sessionStorage
+      (function() {
+        const params = new URLSearchParams(window.location.search);
+        const utmData = {};
+        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'].forEach(key => {
+          if (params.has(key)) {
+            utmData[key] = params.get(key);
+          }
+        });
+        if (Object.keys(utmData).length > 0) {
+          sessionStorage.setItem('captured_utms', JSON.stringify(utmData));
+          console.log('UTMs capturadas e salvas:', utmData);
+        }
+      })();
+    </script>
+    <!-- Script Utmify -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<script>
+  window.pixelId = "6998e653178e4fdf9fec5724";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+    <!-- Fallback caso CSS não carregue -->
+    <style>
+      body { 
+        margin: 0; 
+        padding: 0; 
+        min-height: 100vh;
+        background: #000;
+        color: #fff;
+      }
+      .promo-bar {
+        background: #c00000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- BARRA PROMOCIONAL (NATAL / DESCONTO) -->
+    <div class="promo-bar">
+      <p class="promo-text">
+        <span class="promo-sub">Desconto único de Ano Novo! Expira em: <span id="countdown-timer">13:22</span></span>
+      </p>
+    </div>
+
+    <!-- HERO PRINCIPAL COM VSL -->
+    <header class="hero hero--dark">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            A <span class="hero__badge">MAIOR COLEÇÃO</span> DE MODELOS 3D COM +100 MIL MODELOS PRONTOS!
+          </h1>
+          <p class="hero__subtitle">
+            Acesse agora <strong>TODOS</strong> os modelos organizados por categoria e prontos para imprimir!
+          </p>
+        </div>
+
+        <div class="hero__media">
+          <div class="video-card video-card--primary">
+            <div style="position: relative; width: 100%; max-width: 400px; margin: 0 auto;">
+              <vturb-smartplayer id="vid-699a9c7dfd027ea26a30915c" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+              <script type="text/javascript">
+                var s=document.createElement("script");
+                s.src="https://scripts.converteai.net/a2bc65e2-b315-4aea-b664-3bbdc0b1a084/players/699a9c7dfd027ea26a30915c/v4/player.js";
+                s.async=!0;
+                document.head.appendChild(s);
+              </script>
+            </div>
+
+            <ul class="hero-benefits">
+              <li>Não precisa criar nada do zero, basta baixar e imprimir</li>
+              <li>Arquivos testados, otimizados e organizados por nichos</li>
+              <li>Modelos que já vendem na Shopee e OLX</li>
+              <li>Acesso imediato</li>
+            </ul>
+          </div>
+
+          <div class="hero__cta">
+            <button class="btn-primary btn-primary--full" id="btn-comprar">
+              <strong>BAIXAR PACOTE COM DESCONTO!</strong>
+            </button>
+
+            <div class="rating">
+              <div class="rating__stars" aria-hidden="true">
+                ★★★★★
+              </div>
+              <span class="rating__text">4,98 (5286 AVALIAÇÕES)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SEÇÃO ÁREA DE MEMBROS / DEMONSTRAÇÃO -->
+      <section class="section section--light">
+        <div class="container section__container section__container--center">
+          <h2 class="section__title" style="margin-bottom: 1rem;">ESTE PACK FOI FEITO PARA FACILITAR A SUA VIDA...</h2>
+          <div class="video-card video-card--secondary" style="margin-top: 0;">
+            <div class="video-card__frame video-card__frame--wide" style="padding-top: 0; position: relative; height: auto;">
+              <vturb-smartplayer id="vid-699a9c59055018086ea72129" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
+              <script type="text/javascript">
+                var s=document.createElement("script");
+                s.src="https://scripts.converteai.net/a2bc65e2-b315-4aea-b664-3bbdc0b1a084/players/699a9c59055018086ea72129/v4/player.js";
+                s.async=!0;
+                document.head.appendChild(s);
+              </script>
+            </div>
+          </div>
+
+          <ul class="check-list check-list--hero">
+            <li>Chega de perder horas procurando modelos 3D e acabar com arquivos ruins.</li>
+            <li>Pare de gastar caro comprando modelos individuais que nem sempre valem o investimento.</li>
+            <li>Diga adeus à frustração de ter sua impressora parada por falta de variedade.</li>
+            <li>Comece a lucrar de verdade com milhares de modelos prontos para imprimir e vender.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- COM NOSSO MATERIAL VOCÊ TERÁ -->
+      <section class="section section--light">
+        <div class="container">
+          <h2 class="section__title section__title--center">COM NOSSO MATERIAL VOCÊ TERÁ:</h2>
+
+          <div class="cards-grid cards-grid--benefits">
+            <article class="benefit-card">
+              <div class="benefit-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h3>IDEIAS INFINITAS PARA VENDER</h3>
+              <p>Tenha acesso a uma biblioteca com milhares de temas e categorias.</p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h3>MAIS TEMPO LIVRE</h3>
+              <p>Tudo organizado e separado por pastas, pronto para imprimir.</p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h3>LUCROS PREVISÍVEIS</h3>
+              <p>Modelos testados e aprovados que vendem com frequência e garantem retorno constante.</p>
+            </article>
+            <article class="benefit-card">
+              <div class="benefit-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3>ACESSO RÁPIDO E SEGURO</h3>
+              <p>Baixe tudo de forma simples e use no computador, celular ou HD externo.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIA DE MODELOS -->
+      <section class="section section--dark">
+        <div class="container">
+          <h2 class="section__title section__title--center">VEJA OS MODELOS QUE VOCÊ IRÁ RECEBER:</h2>
+
+          <div class="gallery-carousel">
+            <button class="gallery-carousel__btn gallery-carousel__btn--prev" aria-label="Anterior">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div class="gallery-carousel__container">
+              <div class="gallery-carousel__track">
+                <div class="gallery-carousel__slide">
+                  <div class="gallery__image">
+                    <img src="assets/img/animes.JPG" alt="Coleção Animes" loading="lazy" />
+                  </div>
+                  <span class="gallery__label">Animes</span>
+                </div>
+                <div class="gallery-carousel__slide">
+                  <div class="gallery__image">
+                    <img src="assets/img/desenhos.JPG" alt="Coleção Desenhos" loading="lazy" />
+                  </div>
+                  <span class="gallery__label">Desenhos</span>
+                </div>
+                <div class="gallery-carousel__slide">
+                  <div class="gallery__image">
+                    <img src="assets/img/religiao.JPG" alt="Coleção Religião" loading="lazy" />
+                  </div>
+                  <span class="gallery__label">Religião</span>
+                </div>
+                <div class="gallery-carousel__slide">
+                  <div class="gallery__image">
+                    <img src="assets/img/mitologia.JPG" alt="Coleção Mitologia" loading="lazy" />
+                  </div>
+                  <span class="gallery__label">Mitologia</span>
+                </div>
+                <div class="gallery-carousel__slide">
+                  <div class="gallery__image">
+                    <img src="assets/img/decoracao.JPG" alt="Coleção Decoração" loading="lazy" />
+                  </div>
+                  <span class="gallery__label">Decoração</span>
+                </div>
+                <div class="gallery-carousel__slide">
+                  <div class="gallery__image">
+                    <img src="assets/img/mais.JPG" alt="E muito mais" loading="lazy" />
+                  </div>
+                  <span class="gallery__label">E muito mais</span>
+                </div>
+              </div>
+            </div>
+            <button class="gallery-carousel__btn gallery-carousel__btn--next" aria-label="Próximo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FACILIDADES QUE SÓ ESSE PACK OFERECE -->
+      <section class="section section--light">
+        <div class="container">
+          <h2 class="section__title section__title--center">FACILIDADES QUE SÓ ESSE PACK OFERECE!</h2>
+
+          <div class="cards-grid cards-grid--features">
+            <article class="feature-card">
+              <header class="feature-card__title">
+                <span>MAIS TEMPO PARA LUCRAR 🕒</span>
+              </header>
+              <p>Pare de perder horas procurando arquivos e use esse tempo para imprimir e vender mais.</p>
+            </article>
+
+            <article class="feature-card">
+              <header class="feature-card__title">
+                <span>UM NEGÓCIO PRONTO 💰</span>
+              </header>
+              <p>Com milhares de modelos disponíveis, você começa a lucrar rapidamente, mesmo com pouca experiência.</p>
+            </article>
+
+            <article class="feature-card">
+              <header class="feature-card__title">
+                <span>LIBERDADE PARA PRODUZIR 🧠</span>
+              </header>
+              <p>Imprima o que quiser, quando quiser, e tenha liberdade total pra gerenciar suas vendas.</p>
+            </article>
+
+            <article class="feature-card">
+              <header class="feature-card__title">
+                <span>VENDAS CONSISTENTES 🔥</span>
+              </header>
+              <p>Use modelos com alta demanda e conquiste um fluxo constante de pedidos e faturamento.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BÔNUS EXCLUSIVOS -->
+      <section class="section section--dark">
+        <div class="container">
+          <h2 class="section__title section__title--center">
+            COMPRE HOJE E GANHE 8 BÔNUS EXCLUSIVOS
+          </h2>
+
+          <div class="bonus-grid">
+            <article class="bonus-card">
+              <h3 class="bonus-card__number">BÔNUS 1:</h3>
+              <h4 class="bonus-card__title">Pack de Veículos 3D Profissionais</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-veiculos.JPG" alt="Pack de Veículos 3D" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Carros, motos, caminhões e muito mais prontos para impressão 3D. Crie miniaturas detalhadas, peças
+                colecionáveis ou personalize modelos para revenda.
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 29,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+
+            <article class="bonus-card">
+              <h3 class="bonus-card__number">BÔNUS 2:</h3>
+              <h4 class="bonus-card__title">Coleção Heróis da Marvel</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-marvel.JPG" alt="Coleção Marvel" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Receba uma coleção incrível de modelos STL de heróis lendários da Marvel: personagens, símbolos e
+                acessórios que fazem sucesso entre colecionadores e fãs.
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 39,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+
+            <article class="bonus-card">
+              <h3 class="bonus-card__number">BÔNUS 3:</h3>
+              <h4 class="bonus-card__title">Pack de Chaveiros Personalizados</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-chaveiros.JPG" alt="Pack de Chaveiros" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Mais de 1.000 modelos criativos e exclusivos, incluindo logos, personagens, esportes e temas geek.
+                Perfeito para vender como brindes ou acessórios colecionáveis.
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 19,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+
+            <article class="bonus-card">
+              <h3 class="bonus-card__number">BÔNUS 4:</h3>
+              <h4 class="bonus-card__title">UTENSÍLIOS DOMÉSTICOS</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-utensilios.JPG" alt="Utensílios Domésticos" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Inclui modelos práticos para uso doméstico e profissional: suportes, organizadores, gabaritos e
+                adaptadores. Tenha impressões funcionais que resolvem problemas reais no dia a dia.
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 49,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+
+            <article class="bonus-card">
+              <h3 class="bonus-card__number">BÔNUS 5:</h3>
+              <h4 class="bonus-card__title">Modelos Flexíveis e Articulados</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-flexiveis.JPG" alt="Modelos Flexíveis" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Mais de 1.300 modelos com mecanismos de clique e movimento, como animais, brinquedos e colecionáveis
+                interativos. Peças prontas que mais vendem em marketplaces e lojas de impressão 3D.
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 59,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+
+            <article class="bonus-card">
+              <h3 class="bonus-card__number">BÔNUS 6:</h3>
+              <h4 class="bonus-card__title">Coleção Clássicos dos Desenhos</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-classicos.JPG" alt="Clássicos dos Desenhos" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Uma seleção nostálgica com mais de 30 personagens amados da TV: Johnny Bravo, As Meninas
+                Superpoderosas, Dexter, Scooby Doo, Tom & Jerry e muito mais. Perfeito para colecionadores e fãs de
+                animações.
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 89,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+
+            <article class="bonus-card">
+              <h3 class="bonus-card__number">BÔNUS 7:</h3>
+              <h4 class="bonus-card__title">COLEÇÃO MÁSCARAS 3D</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-mascara.JPG" alt="Coleção Máscaras 3D" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Dezenas de máscaras detalhadas, prontas para imprimir. Ideais para cosplay, decoração e peças de alto
+                valor. Perfeitas para vender, colecionar ou personalizar.
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 69,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+
+            <article class="bonus-card">
+              <h3 class="bonus-card__number">BÔNUS 8:</h3>
+              <h4 class="bonus-card__title">COLEÇÃO POKÉMON 3D</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-pokemon.JPG" alt="Coleção Pokémon 3D" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Mais de 100 modelos das primeiras gerações de Pokémon. Criaturas icônicas, evoluções e itens temáticos.
+                Perfeita para fãs, colecionadores e vendas online.
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 39,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- BÔNUS ESPECIAL -->
+          <div class="bonus-special">
+            <h3 class="bonus-special__title">NÃO ACABOU!</h3>
+            <p class="bonus-special__subtitle">
+              BÔNUS ESPECIAL liberado apenas para compradores desta semana!
+            </p>
+
+            <article class="bonus-card bonus-card--special">
+              <h3 class="bonus-card__number">BÔNUS ESPECIAL:</h3>
+              <h4 class="bonus-card__title">Coleção Premium de Modelos Exclusivos</h4>
+              <div class="bonus-card__image">
+                <img src="assets/img/bonus-exclusivo.JPG" alt="Coleção Premium Exclusiva" loading="lazy" />
+              </div>
+              <p class="bonus-card__description">
+                Coleção exclusiva com centenas de modelos premium selecionados: peças únicas, designs inovadores e
+                modelos de alta qualidade prontos para impressão 3D. Transforme sua impressora em uma máquina de lucro
+                com produtos exclusivos que se destacam no mercado!
+              </p>
+              <div class="bonus-card__price">
+                <del>De R$ 79,90</del>
+                <span class="bonus-card__free">VAI SAIR DE GRAÇA</span>
+              </div>
+            </article>
+
+            <p class="bonus-special__total" style="color: white;">
+              Esses bônus valem <span style="color: green;">R$ <span style="font-weight: bold; color: green;">479,10</span></span> e somente hoje você recebe eles GRATUITAMENTE!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section class="section section--light">
+        <div class="container">
+          <h2 class="section__title section__title--center">VEJA O QUE OS NOSSOS CLIENTES ESTÃO DIZENDO:</h2>
+
+          <!-- Carrossel de Depoimentos WhatsApp -->
+          <div class="whatsapp-testimonials">
+            <div class="whatsapp-carousel">
+              <button class="whatsapp-carousel__btn whatsapp-carousel__btn--prev" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <div class="whatsapp-carousel__container">
+                <div class="whatsapp-carousel__track">
+                  <div class="whatsapp-carousel__slide">
+                    <img src="https://i.postimg.cc/L5ZZjN3C/dep-mega-pack-01.webp" alt="Depoimento WhatsApp 1" loading="lazy" />
+                  </div>
+                  <div class="whatsapp-carousel__slide">
+                    <img src="https://i.postimg.cc/4dvkjzMk/Imagem-do-Whats-App-de-2025-11-19-a(s)-03-29-56-16b1fb6a.webp" alt="Depoimento WhatsApp 2" loading="lazy" />
+                  </div>
+                  <div class="whatsapp-carousel__slide">
+                    <img src="https://i.postimg.cc/NFrrRpkP/dep-mega-pack-02-1.webp" alt="Depoimento WhatsApp 3" loading="lazy" />
+                  </div>
+                  <div class="whatsapp-carousel__slide">
+                    <img src="https://i.postimg.cc/rmGX7Sby/Imagem-do-Whats-App-de-2025-11-19-a(s)-03-29-56-b9eb7d9a.webp" alt="Depoimento WhatsApp 4" loading="lazy" />
+                  </div>
+                  <div class="whatsapp-carousel__slide">
+                    <img src="https://i.postimg.cc/cC88fXBk/dep-mega-pack-03.webp" alt="Depoimento WhatsApp 5" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <button class="whatsapp-carousel__btn whatsapp-carousel__btn--next" aria-label="Próximo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <p class="testimonial-card__text">
+                "Tenho uma Ender 3 basicona e fiquei com medo dos modelos não rodarem. Mas já fiz mais de 40 impressões
+                aqui e tudo saindo perfeitamente. Os arquivos são super compatíveis."
+              </p>
+              <div class="testimonial-card__author">
+                <span class="testimonial-card__avatar">
+                  <img src="assets/img/avatar-mulher.JPG" alt="Mariana S." loading="lazy" />
+                </span>
+                <div>
+                  <strong>Mariana S.</strong>
+                  <span class="testimonial-card__verified">Cliente Verificado</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <p class="testimonial-card__text">
+                "Tinha duvida se ia conseguir vender mas comecei postando no marketplace, primeira semana nada. Ajustei
+                fotos e preço, na segunda semana começou a vender. Hoje, 1 mês depois, já tenho cliente fixo pedindo
+                toda semana. Ter 100 mil opções ajuda demais pra testar vários nichos."
+              </p>
+              <div class="testimonial-card__author">
+                <span class="testimonial-card__avatar">
+                  <img src="assets/img/avatar-homem-1.JPG" alt="Adriano P." loading="lazy" />
+                </span>
+                <div>
+                  <strong>Adriano P.</strong>
+                  <span class="testimonial-card__verified">Cliente Verificado</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <p class="testimonial-card__text">
+                "Achei que ia ser muita quantidade para pouca qualidade, mas testei uns 20 modelos aleatórios e todos
+                imprimiram perfeito. Zero arquivo corrompido, zero erro. Tem coisa muito bem feita no pack. Tô usando
+                faz 3 semanas e ainda nem explorei 5% do que tem lá dentro."
+              </p>
+              <div class="testimonial-card__author">
+                <span class="testimonial-card__avatar">
+                  <img src="assets/img/avatar-homem-2.JPG" alt="João D." loading="lazy" />
+                </span>
+                <div>
+                  <strong>João D.</strong>
+                  <span class="testimonial-card__verified">Cliente Verificado</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ESCOLHA DE PACOTE -->
+      <section class="section section--dark" id="secao-precos">
+        <div class="container">
+          <h2 class="section__title section__title--center">ESCOLHA SEU PACOTE</h2>
+
+          <div class="pricing-grid">
+            <!-- PACOTE BÁSICO -->
+            <article class="pricing-card">
+              <h3 class="pricing-card__name">PACOTE BÁSICO</h3>
+              <ul class="pricing-card__features">
+                <li>Pack com +100.000 arquivos STL</li>
+                <li>Acesso vitalício</li>
+                <li>Bônus 1: Pack de Veículos 3D Profissionais</li>
+                <li>Bônus 2: Coleção Heróis da Marvel</li>
+              </ul>
+              <div class="pricing-card__price">
+                <span class="pricing-card__old-price">De R$ 189,90</span>
+                <span class="pricing-card__label">por apenas:</span>
+                <span class="pricing-card__value">R$9,90</span>
+              </div>
+              <button class="btn-primary btn-primary--full" id="btn-comprar-basico">
+                <strong>ESCOLHER O BÁSICO</strong>
+              </button>
+              <div class="pricing-card__badges">
+                <img src="https://i.ibb.co/ycFWVSHs/Compra-Segura.png" alt="Compra Segura" style="max-width: 50%; height: auto;" />
+              </div>
+            </article>
+
+            <!-- PACOTE PREMIUM -->
+            <article class="pricing-card pricing-card--premium">
+              <span class="badge badge--bestseller badge--top-right">MAIS VENDIDO</span>
+              <h3 class="pricing-card__name">PACOTE PREMIUM</h3>
+              <div class="pricing-card__rating">
+                <span class="rating__stars">★★★★★</span>
+                <span class="rating__text">4,98 (5286 AVALIAÇÕES)</span>
+              </div>
+              <ul class="pricing-card__features">
+                <li>Pack com +100.000 arquivos STL</li>
+                <li>Acesso vitalício</li>
+                <li>Bônus 1: Pack de Veículos 3D Profissionais</li>
+                <li>Bônus 2: Coleção Heróis da Marvel</li>
+                <li>Bônus 3: Pack de Chaveiros Personalizados</li>
+                <li>Bônus 4: Ferramentas 3D Úteis e Inovadoras</li>
+                <li>Bônus 5: Modelos Flexíveis e Articulados</li>
+                <li>Bônus 6: Coleção Clássicos dos Desenhos</li>
+                <li>Bônus 7: Coleção Máscaras 3D</li>
+                <li>Bônus 8: Coleção Pokémon 3D</li>
+                <li>BÔNUS ESPECIAL: Coleção Premium de Modelos Exclusivos</li>
+              </ul>
+              <div class="pricing-card__price">
+                <span class="pricing-card__old-price">De R$ 489,90</span>
+                <span class="pricing-card__label">por apenas:</span>
+                <span class="pricing-card__value">R$27,90</span>
+              </div>
+              <button class="btn-primary btn-primary--full" id="btn-comprar-premium">
+                <strong>QUERO ESSA SUPER OFERTA!</strong>
+              </button>
+              <div class="pricing-card__badges">
+                <img src="https://i.ibb.co/ycFWVSHs/Compra-Segura.png" alt="Compra Segura" style="max-width: 100%; height: auto;" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GARANTIA -->
+      <section class="section section--light">
+        <div class="container section__container section__container--center">
+          <div class="guarantee-badge">
+            <img src="https://i.ibb.co/QFW1kybk/MPSTL-Garntia.webp" alt="100% Dinheiro de Volta - 14 Dias Garantido" style="max-width: 30%; height: auto;" />
+          </div>
+          <h2 class="section__title">GARANTIA INCONDICIONAL DE 14 DIAS</h2>
+          <p class="section__subtitle">
+            Nós confiamos tanto na qualidade do Ultra Pack STL 2026 que oferecemos uma garantia total de 14 dias. Se, por
+            qualquer motivo, você não ficar satisfeito com o material, basta solicitar o reembolso dentro desse prazo
+            e devolvemos 100% do seu dinheiro, sem burocracia e sem perguntas.
+          </p>
+          <button class="btn-primary btn-primary--full" id="btn-comprar-garantia">
+            <strong>COMPRAR COM GARANTIA</strong>
+          </button>
+        </div>
+      </section>
+
+      <!-- FAQ / PERGUNTAS FREQUENTES -->
+      <section class="section section--dark">
+        <div class="container">
+          <h2 class="section__title section__title--center">PERGUNTAS FREQUENTES</h2>
+
+          <div class="faq">
+            <details class="faq__item">
+              <summary>Esses arquivos funcionam na minha impressora 3D?</summary>
+              <p>
+                Sim! Os arquivos são compatíveis com a maioria das impressoras 3D do mercado (FDM/FFF). Os modelos foram
+                testados e otimizados para reduzir falhas de impressão.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Como eu acesso os arquivos depois de pagar?</summary>
+              <p>
+                O acesso é <strong>100% online e imediato</strong>. Assim que o pagamento é confirmado, você recebe os
+                dados de acesso ao ambiente onde os arquivos estão organizados por categorias.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Os arquivos estão organizados?</summary>
+              <p>
+                Sim! Todos os arquivos estão organizados por pastas e categorias (Animes, Desenhos, Decoração, etc.),
+                facilitando a busca e o download do que você precisa.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Preciso baixar todos os arquivos de uma vez?</summary>
+              <p>
+                Não! Você pode baixar apenas os arquivos que precisa, quando precisar. O acesso é vitalício e você
+                baixa no seu ritmo.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Preciso saber modelar em 3D pra usar o pack?</summary>
+              <p>
+                Não! O pack atende tanto iniciantes quanto quem já imprime há mais tempo. Você pode começar pelos
+                modelos mais simples e ir avançando conforme ganha experiência.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Posso vender as impressões dos modelos?</summary>
+              <p>
+                Sim! A ideia do Ultra Pack STL 2026 é justamente permitir que você use os modelos para imprimir e vender os
+                itens físicos em marketplaces e na sua região.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Vale a pena pagar por isso se há modelos grátis?</summary>
+              <p>
+                Sim! Enquanto modelos grátis podem ser de qualidade duvidosa, incompletos ou incompatíveis, nosso pack
+                oferece arquivos testados, organizados e prontos para uso, economizando seu tempo e dinheiro.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Recebo o acesso na hora?</summary>
+              <p>
+                Sim! O acesso é imediato após a confirmação do pagamento. Você recebe os dados de login por e-mail em
+                poucos minutos.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Funciona pra iniciante em impressão 3D?</summary>
+              <p>
+                Sim! O pack é perfeito para iniciantes, pois oferece modelos prontos para imprimir, sem necessidade de
+                conhecimento técnico avançado. Você pode começar a lucrar rapidamente.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__brand">
+            <h3 class="footer__title">Ultra Pack STL 2026</h3>
+            <p class="footer__description">
+              O maior e mais completo pacote de arquivos STL para impressão 3D do Brasil.
+            </p>
+          </div>
+          <div class="footer__contact">
+            <h4>Informações de Contato:</h4>
+            <p>Email para suporte: <a href="mailto:sac@flitma.com">sac@flitma.com</a></p>
+          </div>
+          <div class="footer__links">
+            <a href="#termos">Termos de Uso</a>
+            <span>|</span>
+            <a href="#privacidade">Política de Privacidade</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>Ultra Pack STL 2026 © <span id="ano-atual"></span> — Todos os direitos reservados.</p>
+          <p class="footer__disclaimer">
+            Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a
+            responsabilidade não é deles e sim do nosso site.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal de Upgrade -->
+    <div class="upgrade-modal" id="upgrade-modal">
+      <div class="upgrade-modal__overlay"></div>
+      <div class="upgrade-modal__content">
+        <div class="upgrade-modal__header">
+          <h2>ESPERE! OFERTA EXCLUSIVA!</h2>
+        </div>
+        <div class="upgrade-modal__body">
+          <p class="upgrade-modal__subtitle">UPGRADE PARA O PREMIUM COM</p>
+          <div class="upgrade-modal__badge">DESCONTO EXTRA</div>
+          <div class="upgrade-modal__pricing">
+            <span class="upgrade-modal__old-price">De R$27,90</span>
+            <p class="upgrade-modal__label">Por apenas</p>
+            <p class="upgrade-modal__new-price">R$17,90</p>
+            <p class="upgrade-modal__savings">Economize R$10,00 agora!</p>
+          </div>
+          <ul class="upgrade-modal__benefits">
+            <li>
+              <span class="upgrade-modal__check">✓</span>
+              Acesso a todos os 6 Bônus
+            </li>
+            <li>
+              <span class="upgrade-modal__check">✓</span>
+              Bônus exclusivo de ano novo
+            </li>
+            <li>
+              <span class="upgrade-modal__check">✓</span>
+              Suporte prioritário
+            </li>
+          </ul>
+          <a href="https://www.ggcheckout.com/checkout/v2/JHjpXo2GxPODEjl0R9Ow" class="btn-primary btn-primary--full upgrade-modal__cta" id="btn-upgrade-yes">
+            <strong>SIM, QUERO O DESCONTO!</strong>
+          </a>
+          <button class="upgrade-modal__skip" id="btn-upgrade-no">
+            Não, obrigado. Quero apenas o pacote básico.
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS principal do projeto -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+

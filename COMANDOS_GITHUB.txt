@@ -1,0 +1,39 @@
+===========================================
+COMANDOS PARA ENVIAR AO GITHUB
+Repositorio: Nnova-pasta
+===========================================
+
+SUBSTITUA "SEU_USUARIO" pelo seu nome de usuario do GitHub!
+
+1. Abra o PowerShell nesta pasta
+
+2. Execute os comandos abaixo (um por vez):
+
+git init
+git remote add origin https://github.com/SEU_USUARIO/Nnova-pasta.git
+git add .
+git commit -m "Atualizacao: melhorias no design e funcionalidades"
+git branch -M main
+git push -u origin main
+
+===========================================
+OU execute o script automatico:
+===========================================
+
+powershell -ExecutionPolicy Bypass -File "enviar-github-simples.ps1"
+
+(O script vai pedir seu usuario do GitHub)
+
+===========================================
+PROBLEMAS?
+===========================================
+
+- Se der erro de "repository not found":
+  Crie o repositorio "Nnova-pasta" no GitHub primeiro!
+
+- Se der erro de autenticacao:
+  Configure suas credenciais:
+  git config --global user.name "Seu Nome"
+  git config --global user.email "seu@email.com"
+
+- Veja mais detalhes em: GITHUB_INSTRUCOES.md
