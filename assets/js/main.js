@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault(); // Previne navegação imediata se for link
       upgradeModal.classList.remove("active");
       // Link do botão NÃO (Pega do HTML ou usa o fixo se vazio)
-      const urlNao = btnUpgradeNo.getAttribute("href") || "https://kiwify.app/dlLcAUr";
+      const urlNao = btnUpgradeNo.getAttribute("href") || "https://pay.kiwify.com/NgYmCYr";
       // Pequeno delay para a modal fechar visualmente antes de ir
       setTimeout(() => redirectWithUtm(urlNao), 200);
     });
