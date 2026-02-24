@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnComprarPremium.addEventListener("click", function(e) {
       e.preventDefault();
       // Pega o link que você colocou no botão lá no editor visual
-      const urlAlvo = this.getAttribute("href") || "https://pay.kiwify.com.br/jOFSQm9"; 
+      const urlAlvo = this.getAttribute("href") || "https://pay.kiwify.com/Sn3OD6N"; 
       redirectWithUtm(urlAlvo);
     });
   }
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnUpgradeYes.addEventListener("click", (e) => {
       e.preventDefault();
       // Link do botão SIM (Pega do HTML ou usa o fixo se vazio)
-      const urlSim = btnUpgradeYes.getAttribute("href") || "https://www.ggcheckout.com/checkout/v2/JHjpXo2GxPODEjl0R9Ow";
+      const urlSim = btnUpgradeYes.getAttribute("href") || "https://pay.kiwify.com/Sn3OD6N";
       redirectWithUtm(urlSim);
     });
   }
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault(); // Previne navegação imediata se for link
       upgradeModal.classList.remove("active");
       // Link do botão NÃO (Pega do HTML ou usa o fixo se vazio)
-      const urlNao = btnUpgradeNo.getAttribute("href") || "https://www.ggcheckout.com/checkout/v2/gx1Lkf8Iorj6dCzd2eXY";
+      const urlNao = btnUpgradeNo.getAttribute("href") || "https://kiwify.app/dlLcAUr";
       // Pequeno delay para a modal fechar visualmente antes de ir
       setTimeout(() => redirectWithUtm(urlNao), 200);
     });
