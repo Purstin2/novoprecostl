@@ -262,38 +262,5 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTimer();
   }
 
-  // ==============================================================
-  // 6. PROTEÇÕES (Anti-Inspecionar)
-  // ==============================================================
-  const redirectAntiInspecionar = () => {
-    // Comentado para testes (Descomente para produção se quiser irritar os curiosos)
-    window.location.href = "https://www.google.com/";
-  };
-
-  document.addEventListener("contextmenu", (e) => e.preventDefault());
-  
-  document.addEventListener("keydown", (e) => {
-    const key = e.key?.toLowerCase();
-    if (e.key === "F12" || 
-       (e.ctrlKey && e.shiftKey && ["i", "j", "c"].includes(key)) || 
-       (e.ctrlKey && ["u", "s", "p"].includes(key))) {
-       e.preventDefault();
-       redirectAntiInspecionar();
-    }
-  });
-
-  document.addEventListener("copy", (e) => {
-    e.preventDefault();
-    e.clipboardData?.setData("text/plain", "");
-  });
-
-  setInterval(() => {
-    const threshold = 160;
-    if (window.outerWidth - window.innerWidth > threshold || 
-        window.outerHeight - window.innerHeight > threshold) {
-      redirectAntiInspecionar();
-    }
-  }, 1000);
-
   console.log("JavaScript carregado: Modo Universal Ativo.");
 });
